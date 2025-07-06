@@ -80,7 +80,8 @@ export default function ServicesSection() {
             <img 
               src={skinExamImage} 
               alt="Woman examining a mole on her shoulder in front of a mirror - skin cancer self-examination" 
-              className="rounded-lg w-full h-48 object-cover object-bottom mb-6"
+              className="rounded-lg w-full h-48 object-cover object-center mb-6"
+              style={{ objectPosition: '50% 60%' }}
             />
             <p className="text-medical-gray mb-6 leading-relaxed">
               Expert diagnosis and surgical treatment of skin cancers, employing precise techniques 
