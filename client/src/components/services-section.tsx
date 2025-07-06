@@ -44,10 +44,7 @@ export default function ServicesSection() {
                 <div className="w-2 h-2 bg-medical-blue rounded-full mr-3"></div>
                 Reconstructive procedures
               </li>
-              <li className="flex items-center text-gray-700">
-                <div className="w-2 h-2 bg-medical-blue rounded-full mr-3"></div>
-                Cosmetic enhancements
-              </li>
+
               <li className="flex items-center text-gray-700">
                 <div className="w-2 h-2 bg-medical-blue rounded-full mr-3"></div>
                 Post-trauma reconstruction
@@ -92,10 +89,7 @@ export default function ServicesSection() {
                 <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
                 Early detection and diagnosis
               </li>
-              <li className="flex items-center text-gray-700">
-                <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
-                Mohs micrographic surgery
-              </li>
+
               <li className="flex items-center text-gray-700">
                 <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
                 Wide local excisions

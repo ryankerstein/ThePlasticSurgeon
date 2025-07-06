@@ -30,7 +30,7 @@ export default function HeroSection() {
               Providing comprehensive plastic surgery and skin cancer treatments in Buckinghamshire. 
               Combining clinical excellence with compassionate patient care for optimal outcomes.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <button 
                 onClick={scrollToContact}
                 className="bg-medical-blue text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-semibold text-center flex items-center justify-center"
@@ -49,6 +49,23 @@ export default function HeroSection() {
                 </svg>
                 Our Services
               </button>
+            </div>
+            
+            <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-lg">
+              <svg className="w-4 h-4 text-medical-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <span className="text-gray-700 text-sm">
+                Health technology enquiries:{" "}
+                <a 
+                  href="https://thesurgeon.io" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-medical-blue font-medium hover:text-blue-800 transition-colors"
+                >
+                  TheSurgeon.io
+                </a>
+              </span>
             </div>
           </div>
           <div className="order-1 lg:order-2">
