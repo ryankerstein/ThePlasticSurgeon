@@ -6,23 +6,7 @@ export default function EducationSection() {
   return (
     <section id="education" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Medtech Link */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-medical-blue/10 px-6 py-3 rounded-lg mb-8">
-            <ExternalLink className="h-5 w-5 text-medical-blue" />
-            <span className="text-medical-blue font-medium">
-              For health technology and medtech enquiries, visit{" "}
-              <a 
-                href="https://thesurgeon.io" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="underline hover:text-medical-blue/80 transition-colors"
-              >
-                TheSurgeon.io
-              </a>
-            </span>
-          </div>
-        </div>
+
 
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
