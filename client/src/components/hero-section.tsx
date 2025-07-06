@@ -56,15 +56,17 @@ export default function HeroSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
               <span className="text-gray-700 text-sm">
-                Health technology enquiries:{" "}
+                Looking for Medtech and Health Innovation expertise?<br />
+                Visit{" "}
                 <a 
                   href="https://thesurgeon.io" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-medical-blue font-medium hover:text-blue-800 transition-colors"
                 >
-                  TheSurgeon.io
+                  thesurgeon.io
                 </a>
+                {" "}for my Medtech practice
               </span>
             </div>
           </div>
