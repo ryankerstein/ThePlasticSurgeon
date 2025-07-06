@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <div className="text-2xl font-bold mb-4 flex items-center">
               <svg className="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
               Plastic Surgery Specialist
             </div>
@@ -87,8 +87,21 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Plastic Surgery Specialist. Operating within Buckinghamshire Healthcare NHS Trust.</p>
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-gray-400">
+            <p>&copy; 2024 Plastic Surgery Specialist. Operating within Buckinghamshire Healthcare NHS Trust.</p>
+            <p className="mt-2 md:mt-0">
+              Interested in health technology? Visit{" "}
+              <a 
+                href="https://thesurgeon.io" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
+              >
+                thesurgeon.io
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

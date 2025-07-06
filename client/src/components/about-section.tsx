@@ -5,9 +5,9 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional surgeon in medical facility" 
-              className="rounded-xl shadow-lg w-full h-auto"
+              src="/attached_assets/0mj9yybg_1751805173593.png" 
+              alt="Plastic Surgery Specialist - Professional portrait" 
+              className="rounded-xl shadow-lg w-full h-auto max-w-lg mx-auto"
             />
           </div>
           <div>
@@ -16,12 +16,14 @@ export default function AboutSection() {
               <span className="text-medical-blue"> Surgical Care</span>
             </h2>
             <p className="text-lg text-medical-gray mb-6 leading-relaxed">
-              As a specialist plastic surgeon operating within Buckinghamshire Healthcare, I am committed to providing 
-              the highest standard of care for both routine plastic surgery and skin cancer treatments.
+              As a Fellow of the Royal College of Surgeons and full member of BAPRAS (British Association of Plastic, 
+              Reconstructive and Aesthetic Surgeons), I am committed to providing the highest standard of care 
+              for both routine plastic surgery and skin cancer treatments.
             </p>
             <p className="text-lg text-medical-gray mb-8 leading-relaxed">
-              My practice combines cutting-edge surgical techniques with a deep understanding of patient needs, 
-              ensuring optimal outcomes for every individual under my care.
+              As the Skin Cancer Lead for my hospital within Buckinghamshire Healthcare, I combine cutting-edge 
+              surgical techniques with a deep understanding of patient needs, ensuring optimal outcomes for 
+              every individual under my care.
             </p>
             
             <div className="space-y-4">
@@ -31,7 +33,7 @@ export default function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-lg text-gray-700">Specialist in routine plastic surgery procedures</span>
+                <span className="text-lg text-gray-700">Fellow of the Royal College of Surgeons</span>
               </div>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-medical-blue rounded-full flex items-center justify-center mr-4">
@@ -39,7 +41,7 @@ export default function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-lg text-gray-700">Expert in skin cancer diagnosis and treatment</span>
+                <span className="text-lg text-gray-700">Full member of BAPRAS</span>
               </div>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-medical-blue rounded-full flex items-center justify-center mr-4">
@@ -47,7 +49,15 @@ export default function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-lg text-gray-700">Affiliated with Buckinghamshire Healthcare NHS Trust</span>
+                <span className="text-lg text-gray-700">Skin Cancer Lead for hospital</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-medical-blue rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span className="text-lg text-gray-700">Operating within Buckinghamshire Healthcare NHS Trust</span>
               </div>
             </div>
           </div>
