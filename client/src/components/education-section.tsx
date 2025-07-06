@@ -135,7 +135,7 @@ export default function EducationSection() {
                 Prevention is the best approach to skin health. Key strategies include:
               </p>
               <ul className="text-gray-600 space-y-1 list-disc list-inside">
-                <li>Sun protection (SPF 30+)</li>
+                <li>Sun protection (SPF 50+)</li>
                 <li>Regular self-examinations</li>
                 <li>Professional skin checks</li>
                 <li>Avoiding tanning beds</li>
