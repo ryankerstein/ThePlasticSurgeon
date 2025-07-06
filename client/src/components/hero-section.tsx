@@ -18,6 +18,10 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
+            <div className="mb-4">
+              <p className="text-xl text-medical-blue font-semibold mb-2">Mr Ryan Kerstein</p>
+              <p className="text-lg text-medical-gray">FRCS, BAPRAS • Skin Cancer Lead</p>
+            </div>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
               Expert Plastic Surgery & 
               <span className="text-medical-blue"> Skin Cancer Care</span>
@@ -49,8 +53,8 @@ export default function HeroSection() {
           </div>
           <div className="order-1 lg:order-2">
             <img 
-              src="/attached_assets/0mj9yybg_1751805173593.png" 
-              alt="Plastic Surgery Specialist - Professional medical consultation" 
+              src="/attached_assets/0mj9yybg_1751807199774.png" 
+              alt="Mr Ryan Kerstein - Plastic Surgery Specialist" 
               className="rounded-xl shadow-2xl w-full h-auto max-w-md mx-auto"
             />
           </div>

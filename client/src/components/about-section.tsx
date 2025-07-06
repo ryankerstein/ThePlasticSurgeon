@@ -5,8 +5,8 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="/attached_assets/0mj9yybg_1751805173593.png" 
-              alt="Plastic Surgery Specialist - Professional portrait" 
+              src="/attached_assets/0mj9yybg_1751807199774.png" 
+              alt="Mr Ryan Kerstein - Professional portrait" 
               className="rounded-xl shadow-lg w-full h-auto max-w-lg mx-auto"
             />
           </div>
