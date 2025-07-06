@@ -1,3 +1,5 @@
+import headshotImage from "@assets/0mj9yybg_1751807199774.png";
+
 export default function HeroSection() {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -51,7 +53,7 @@ export default function HeroSection() {
           </div>
           <div className="order-1 lg:order-2">
             <img 
-              src="/attached_assets/0mj9yybg_1751807199774.png" 
+              src={headshotImage} 
               alt="Mr Ryan Kerstein - Plastic Surgery Specialist" 
               className="rounded-xl shadow-2xl w-full h-auto max-w-md mx-auto"
             />
