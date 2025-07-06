@@ -4,7 +4,7 @@ export default function FacilitiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            State-of-the-Art <span className="text-medical-blue">Medical Facilities</span>
+            High Quality <span className="text-medical-blue">Medical Facilities</span>
           </h2>
           <p className="text-xl text-medical-gray max-w-3xl mx-auto">
             Operating in modern, fully equipped medical facilities that meet the highest standards 
@@ -12,43 +12,7 @@ export default function FacilitiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img 
-              src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-              alt="Modern medical facility interior" 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Advanced Operating Theatres</h3>
-              <p className="text-medical-gray">State-of-the-art surgical suites with the latest technology for precision procedures</p>
-            </div>
-          </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img 
-              src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-              alt="Sterile surgical instruments and environment" 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sterile Environment</h3>
-              <p className="text-medical-gray">Maintained to the highest infection control standards for patient safety</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img 
-              src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
-              alt="Modern hospital consultation room" 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Private Consultation Rooms</h3>
-              <p className="text-medical-gray">Comfortable, private spaces for patient consultations and follow-up care</p>
-            </div>
-          </div>
-        </div>
 
         {/* Buckinghamshire Healthcare Connection */}
         <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
