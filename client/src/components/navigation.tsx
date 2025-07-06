@@ -46,6 +46,12 @@ export default function Navigation() {
                 Services
               </button>
               <button 
+                onClick={() => scrollToSection('education')}
+                className="text-gray-700 hover:text-medical-blue transition-colors duration-200 font-medium"
+              >
+                Education
+              </button>
+              <button 
                 onClick={() => scrollToSection('facilities')}
                 className="text-gray-700 hover:text-medical-blue transition-colors duration-200 font-medium"
               >
@@ -93,6 +99,12 @@ export default function Navigation() {
                 className="block px-3 py-2 text-gray-700 hover:text-medical-blue transition-colors duration-200 font-medium w-full text-left"
               >
                 Services
+              </button>
+              <button 
+                onClick={() => scrollToSection('education')}
+                className="block px-3 py-2 text-gray-700 hover:text-medical-blue transition-colors duration-200 font-medium w-full text-left"
+              >
+                Education
               </button>
               <button 
                 onClick={() => scrollToSection('facilities')}
