@@ -87,9 +87,16 @@ export default function ServicesSection() {
             <ul className="space-y-3 mb-6">
               <li className="flex items-center text-gray-700">
                 <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
+                Full skin cancer treatment
+              </li>
+              <li className="flex items-center text-gray-700">
+                <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
+                MDT (Multidisciplinary Team) care
+              </li>
+              <li className="flex items-center text-gray-700">
+                <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
                 Early detection and diagnosis
               </li>
-
               <li className="flex items-center text-gray-700">
                 <div className="w-2 h-2 bg-accent-blue rounded-full mr-3"></div>
                 Wide local excisions
