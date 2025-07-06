@@ -66,6 +66,7 @@ This is a professional medical website for a plastic surgeon specializing in rou
 - **drizzle-orm**: Type-safe database operations
 - **zod**: Runtime schema validation
 - **wouter**: Lightweight React router
+- **resend**: Email delivery service for contact form notifications
 
 ### UI Dependencies
 - **@radix-ui/***: Headless UI primitives for accessibility
@@ -102,7 +103,10 @@ This is a professional medical website for a plastic surgeon specializing in rou
 
 ```
 Changelog:
-- July 06, 2025. Initial setup
+- July 06, 2025: Initial setup
+- July 06, 2025: Configured Resend email service for contact form submissions
+- July 06, 2025: Added professional photo and updated credentials (FRCS, BAPRAS, Skin Cancer Lead)
+- July 06, 2025: Configured dual email delivery to gemma.fowler5@nhs.net and MrRyanKerstein@ThePlasticSurgeon.IO
 ```
 
 ## User Preferences

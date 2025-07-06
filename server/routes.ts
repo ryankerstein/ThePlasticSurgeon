@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactInquirySchema } from "@shared/schema";
 import { z } from "zod";
+import { sendContactInquiryEmail } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
@@ -11,8 +12,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const validatedData = insertContactInquirySchema.parse(req.body);
       const inquiry = await storage.createContactInquiry(validatedData);
       
-      // In a real implementation, you would send an email here
-      console.log("New contact inquiry received:", inquiry);
+      // Send email notification to both recipients
+      console.log("About to send email for inquiry:", inquiry.id);
+      try {
+        const emailSent = await sendContactInquiryEmail({ inquiry });
+        console.log("Email send result:", emailSent);
+        
+        if (!emailSent) {
+          console.warn("Email notification failed for inquiry:", inquiry.id);
+          // Continue with success response even if email fails
+          // This ensures the form submission is recorded even if email delivery has issues
+        }
+      } catch (emailError) {
+        console.error("Email service error:", emailError);
+        // Continue with success response even if email fails
+      }
+      
+      console.log("New contact inquiry received and processed:", inquiry.id);
       
       res.json({ 
         success: true, 
