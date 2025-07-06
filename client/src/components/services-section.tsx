@@ -37,7 +37,7 @@ export default function ServicesSection() {
             />
             <p className="text-medical-gray mb-6 leading-relaxed">
               Comprehensive plastic surgery procedures designed to enhance function and appearance, 
-              utilizing advanced techniques for optimal patient satisfaction and recovery.
+              utilising advanced techniques for optimal patient satisfaction and recovery.
             </p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center text-gray-700">

@@ -77,7 +77,7 @@ export default function EducationSection() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">
-                Treatment plans are individualized based on your specific condition, health status, 
+                Treatment plans are individualised based on your specific condition, health status, 
                 and personal preferences. Options may include:
               </p>
               <ul className="text-gray-600 space-y-1 list-disc list-inside">
@@ -153,10 +153,10 @@ export default function EducationSection() {
               <p className="text-amber-700 text-sm leading-relaxed">
                 This information is for educational purposes only and does not constitute medical advice. 
                 It should not be used as a substitute for professional medical consultation, diagnosis, or treatment. 
-                Always seek the advice of your physician or other qualified healthcare provider with any questions 
+                Always seek the advice of your GP or other qualified healthcare provider with any questions 
                 you may have regarding a medical condition. Never disregard professional medical advice or delay 
                 seeking it because of information you have read on this website. If you think you may have a 
-                medical emergency, call your doctor or emergency services immediately.
+                medical emergency, call your GP or emergency services immediately.
               </p>
             </div>
           </div>

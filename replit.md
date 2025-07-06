@@ -107,10 +107,14 @@ Changelog:
 - July 06, 2025: Configured Resend email service for contact form submissions
 - July 06, 2025: Added professional photo and updated credentials (FRCS, BAPRAS, Skin Cancer Lead)
 - July 06, 2025: Configured dual email delivery to gemma.fowler5@nhs.net and MrRyanKerstein@ThePlasticSurgeon.IO
+- July 06, 2025: Added comprehensive patient education section with clinical content and medical disclaimers
+- July 06, 2025: Updated footer with company registration details "TheSurgeon.io Ltd (UK Company No. 13552195)"
+- July 06, 2025: Converted all content to UK English spelling and terminology
 ```
 
 ## User Preferences
 
 ```
 Preferred communication style: Simple, everyday language.
+Language standard: UK English spelling and terminology (personalised, utilising, centre, colour, GP instead of physician).
 ```
