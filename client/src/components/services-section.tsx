@@ -1,3 +1,5 @@
+import skinExamImage from "@assets/ChatGPT Image Jul 6, 2025, 02_51_52 PM_1751809923957.png";
+
 export default function ServicesSection() {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -76,8 +78,8 @@ export default function ServicesSection() {
               <h3 className="text-2xl font-bold text-gray-900">Skin Cancer Operations</h3>
             </div>
             <img 
-              src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
-              alt="Skin cancer examination with medical equipment" 
+              src={skinExamImage} 
+              alt="Woman examining a mole on her shoulder in front of a mirror - skin cancer self-examination" 
               className="rounded-lg w-full h-48 object-cover mb-6"
             />
             <p className="text-medical-gray mb-6 leading-relaxed">
