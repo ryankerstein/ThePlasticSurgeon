@@ -23,12 +23,12 @@ export default function HeroSection() {
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
               <span className="text-medical-blue">Mr Ryan Kerstein</span>
               <br />
-              Expert Plastic Surgery & 
-              <span className="text-medical-blue"> Skin Cancer Care</span>
+              Plastic Surgeon & 
+              <span className="text-medical-blue"> Skin Cancer Specialist</span>
             </h1>
             <p className="text-xl text-medical-gray mb-8 leading-relaxed">
-              Providing comprehensive plastic surgery and skin cancer treatments in Buckinghamshire. 
-              Combining clinical excellence with compassionate patient care for optimal outcomes.
+              Expert plastic surgeon providing comprehensive skin cancer treatment and plastic surgery in Buckinghamshire NHS Trust. 
+              Specialising in skin cancer operations, reconstructive surgery, and MDT care with clinical excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <button 

@@ -13,11 +13,11 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Comprehensive <span className="text-medical-blue">Surgical Services</span>
+            Plastic Surgery & <span className="text-medical-blue">Skin Cancer Services</span>
           </h2>
           <p className="text-xl text-medical-gray max-w-3xl mx-auto">
-            Offering a full range of plastic surgery and skin cancer treatments with the latest techniques 
-            and technology for optimal patient outcomes.
+            Expert plastic surgeon providing comprehensive skin cancer treatment and plastic surgery services 
+            in Buckinghamshire NHS Trust with advanced surgical techniques and exceptional patient care.
           </p>
         </div>
 

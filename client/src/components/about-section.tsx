@@ -14,18 +14,18 @@ export default function AboutSection() {
           </div>
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Dedicated to Excellence in 
-              <span className="text-medical-blue"> Surgical Care</span>
+              Plastic Surgeon & 
+              <span className="text-medical-blue"> Skin Cancer Specialist</span>
             </h2>
             <p className="text-lg text-medical-gray mb-6 leading-relaxed">
-              As a Fellow of the Royal College of Surgeons and full member of BAPRAS (British Association of Plastic, 
-              Reconstructive and Aesthetic Surgeons), I am committed to providing the highest standard of care 
-              for both routine plastic surgery and skin cancer treatments.
+              As a Fellow of the Royal College of Surgeons (FRCS) and full member of BAPRAS (British Association of Plastic, 
+              Reconstructive and Aesthetic Surgeons), I am a consultant plastic surgeon specialising in comprehensive 
+              skin cancer treatment and reconstructive plastic surgery within the NHS.
             </p>
             <p className="text-lg text-medical-gray mb-8 leading-relaxed">
-              As the Skin Cancer Lead for my hospital within Buckinghamshire Healthcare, I combine cutting-edge 
-              surgical techniques with a deep understanding of patient needs, ensuring optimal outcomes for 
-              every individual under my care.
+              As the Skin Cancer Lead for Buckinghamshire Healthcare NHS Trust, I provide expert plastic surgery 
+              and skin cancer operations, combining advanced surgical techniques with multidisciplinary team care 
+              to deliver optimal outcomes for patients across Buckinghamshire.
             </p>
             
             <div className="space-y-4">
