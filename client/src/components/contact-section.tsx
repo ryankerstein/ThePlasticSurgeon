@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
+import { trackMedicalEvent, trackContactFormEvent } from "@/lib/analytics";
 
 interface ContactFormData {
   firstName: string;
@@ -32,9 +33,16 @@ export default function ContactSection() {
       return await apiRequest("POST", "/api/contact", data);
     },
     onSuccess: () => {
+      // Track successful form submission
+      trackMedicalEvent('contact_form_submit', {
+        service: formData.service,
+        form_completed: true
+      });
+      trackContactFormEvent('submitted');
+      
       toast({
         title: "Message Sent",
-        description: "Thank you for your inquiry. Gemma Fowler will contact you shortly.",
+        description: "Thank you for your inquiry. We will contact you shortly.",
       });
       setFormData({
         firstName: "",
@@ -46,6 +54,9 @@ export default function ContactSection() {
       });
     },
     onError: (error: any) => {
+      // Track form submission error
+      trackContactFormEvent('validation_error');
+      
       toast({
         title: "Error",
         description: error.message || "There was an error submitting your inquiry. Please try again.",
@@ -58,6 +69,7 @@ export default function ContactSection() {
     e.preventDefault();
     
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+      trackContactFormEvent('validation_error');
       toast({
         title: "Please fill in required fields",
         description: "First name, last name, email, and message are required.",
@@ -67,6 +79,10 @@ export default function ContactSection() {
     }
 
     submitContactForm.mutate(formData);
+  };
+
+  const handleFieldFocus = (field: string) => {
+    trackContactFormEvent('field_focus', field);
   };
 
   const handleInputChange = (field: keyof ContactFormData, value: string) => {
@@ -160,6 +176,7 @@ export default function ContactSection() {
                     type="text"
                     value={formData.firstName}
                     onChange={(e) => handleInputChange("firstName", e.target.value)}
+                    onFocus={() => handleFieldFocus("firstName")}
                     placeholder="Your first name"
                     required
                     className="focus:ring-medical-blue focus:border-medical-blue"
@@ -174,6 +191,7 @@ export default function ContactSection() {
                     type="text"
                     value={formData.lastName}
                     onChange={(e) => handleInputChange("lastName", e.target.value)}
+                    onFocus={() => handleFieldFocus("lastName")}
                     placeholder="Your last name"
                     required
                     className="focus:ring-medical-blue focus:border-medical-blue"

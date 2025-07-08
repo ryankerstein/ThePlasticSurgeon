@@ -1,5 +1,6 @@
 import skinExamImage from "@assets/ChatGPT Image Jul 6, 2025, 02_51_52 PM_1751809923957.png";
 import plasticSurgeryImage from "@assets/ChatGPT Image Jul 6, 2025, 03_01_14 PM_1751810491959.png";
+import { trackServiceInteraction } from "@/lib/analytics";
 
 export default function ServicesSection() {
   const scrollToContact = () => {
@@ -7,6 +8,11 @@ export default function ServicesSection() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleServiceClick = (serviceName: string) => {
+    trackServiceInteraction(serviceName, 'clicked');
+    scrollToContact();
   };
 
   return (
@@ -58,7 +64,7 @@ export default function ServicesSection() {
               </li>
             </ul>
             <button 
-              onClick={scrollToContact}
+              onClick={() => handleServiceClick('Routine Plastic Surgery')}
               className="text-medical-blue font-semibold hover:text-soft-blue transition-colors duration-200 flex items-center"
             >
               Learn More 
@@ -111,7 +117,7 @@ export default function ServicesSection() {
               </li>
             </ul>
             <button 
-              onClick={scrollToContact}
+              onClick={() => handleServiceClick('Skin Cancer Operations')}
               className="text-accent-blue font-semibold hover:text-soft-blue transition-colors duration-200 flex items-center"
             >
               Learn More 

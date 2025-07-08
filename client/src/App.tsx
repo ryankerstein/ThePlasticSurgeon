@@ -5,8 +5,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
+import { useEffect } from "react";
+import { initGA, initClarity } from "./lib/analytics";
+import { useAnalytics } from "./hooks/use-analytics";
 
 function Router() {
+  // Track page views when routes change
+  useAnalytics();
+  
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -16,6 +22,22 @@ function Router() {
 }
 
 function App() {
+  // Initialize analytics when app loads
+  useEffect(() => {
+    // Verify required environment variables are present
+    if (!import.meta.env.VITE_GA_MEASUREMENT_ID) {
+      console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
+    } else {
+      initGA();
+    }
+
+    if (!import.meta.env.VITE_CLARITY_PROJECT_ID) {
+      console.warn('Missing required Microsoft Clarity key: VITE_CLARITY_PROJECT_ID');
+    } else {
+      initClarity();
+    }
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
