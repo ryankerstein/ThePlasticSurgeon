@@ -7,7 +7,9 @@ import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
 import { initGA, initClarity } from "./lib/analytics";
+import { initConsentMode } from "./lib/consent";
 import { useAnalytics } from "./hooks/use-analytics";
+import CookieConsent from "@/components/cookie-consent";
 
 function Router() {
   // Track page views when routes change
@@ -22,8 +24,11 @@ function Router() {
 }
 
 function App() {
-  // Initialize analytics when app loads
+  // Initialize consent mode and analytics when app loads
   useEffect(() => {
+    // Initialize consent mode first (before analytics)
+    initConsentMode();
+
     // Verify required environment variables are present
     if (!import.meta.env.VITE_GA_MEASUREMENT_ID) {
       console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
@@ -43,6 +48,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <CookieConsent />
       </TooltipProvider>
     </QueryClientProvider>
   );

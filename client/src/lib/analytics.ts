@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-// Initialize Google Analytics
+// Initialize Google Analytics with Consent Mode
 export const initGA = () => {
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
@@ -16,18 +16,18 @@ export const initGA = () => {
     return;
   }
 
-  // Add Google Analytics script to the head
-  const script1 = document.createElement('script');
-  script1.async = true;
-  script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-  document.head.appendChild(script1);
-
-  // Initialize gtag
+  // Initialize gtag function first
   window.dataLayer = window.dataLayer || [];
   function gtag(...args: any[]) {
     window.dataLayer.push(args);
   }
   window.gtag = gtag;
+
+  // Add Google Analytics script to the head
+  const script1 = document.createElement('script');
+  script1.async = true;
+  script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+  document.head.appendChild(script1);
 
   gtag('js', new Date());
   gtag('config', measurementId, {
@@ -47,7 +47,7 @@ export const initClarity = () => {
   }
 
   // Microsoft Clarity tracking script
-  (function(c: any, l: any, a: any, r: any, i: any, t: any, y: any) {
+  (function(c: any, l: any, a: any, r: any, i: any, t?: any, y?: any) {
     c[a] = c[a] || function() {
       (c[a].q = c[a].q || []).push(arguments);
     };
