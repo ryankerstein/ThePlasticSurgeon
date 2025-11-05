@@ -112,6 +112,7 @@ Changelog:
 - July 06, 2025: Converted all content to UK English spelling and terminology
 - July 06, 2025: Optimized SEO for "Plastic Surgeon" and "Skin Cancer" keywords - updated meta tags, headings, content, and added structured data schema
 - November 05, 2025: Updated email copy recipient to ryan@thesurgeon.io
+- November 05, 2025: Switched from Resend to Mailjet for email delivery (more reliable, 6,000 emails/month free tier)
 ```
 
 ## User Preferences
