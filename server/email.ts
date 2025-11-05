@@ -63,6 +63,16 @@ This inquiry was submitted through the Plastic Surgery Specialist website.
 
     const results = await Promise.allSettled(emailPromises);
     
+    // Log detailed results for each email
+    results.forEach((result, index) => {
+      const recipient = index === 0 ? 'gemma.fowler5@nhs.net' : 'ryan@thesurgeon.io';
+      if (result.status === 'fulfilled') {
+        console.log(`Email to ${recipient} - Success:`, JSON.stringify(result.value, null, 2));
+      } else {
+        console.error(`Email to ${recipient} - Failed:`, JSON.stringify(result.reason, null, 2));
+      }
+    });
+    
     // Check if at least one email was sent successfully
     const successCount = results.filter(result => result.status === 'fulfilled').length;
     
