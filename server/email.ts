@@ -47,14 +47,14 @@ This inquiry was submitted through the Plastic Surgery Specialist website.
     const emailPromises = [
       // Primary contact - Gemma Fowler
       resend.emails.send({
-        from: 'noreply@ThePlasticSurgeon.IO',
+        from: 'nonreply@thesurgeon.io',
         to: 'gemma.fowler5@nhs.net',
         subject: `New Patient Inquiry - ${inquiry.firstName} ${inquiry.lastName}`,
         text: emailContent,
       }),
       // Copy to specialist
       resend.emails.send({
-        from: 'noreply@ThePlasticSurgeon.IO',
+        from: 'nonreply@thesurgeon.io',
         to: 'ryan@thesurgeon.io',
         subject: `New Patient Inquiry - ${inquiry.firstName} ${inquiry.lastName}`,
         text: emailContent,
