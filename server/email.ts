@@ -55,7 +55,7 @@ This inquiry was submitted through the Plastic Surgery Specialist website.
       // Copy to specialist
       resend.emails.send({
         from: 'noreply@ThePlasticSurgeon.IO',
-        to: 'MrRyanKerstein@ThePlasticSurgeon.IO',
+        to: 'ryan@thesurgeon.io',
         subject: `New Patient Inquiry - ${inquiry.firstName} ${inquiry.lastName}`,
         text: emailContent,
       })
