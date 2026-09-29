@@ -23,9 +23,10 @@ export default function AboutSection() {
               skin cancer treatment and reconstructive plastic surgery within the NHS.
             </p>
             <p className="text-lg text-medical-gray mb-8 leading-relaxed">
-              As the Skin Cancer Lead for Buckinghamshire Healthcare NHS Trust, I provide expert plastic surgery 
-              and skin cancer operations, combining advanced surgical techniques with multidisciplinary team care 
-              to deliver optimal outcomes for patients across Buckinghamshire.
+              At Buckinghamshire Healthcare NHS Trust I provide plastic surgery and skin cancer operations, combining
+              advanced surgical techniques with multidisciplinary team care to deliver the best possible outcomes
+              for patients across Buckinghamshire. I am also Visiting Professor at Buckinghamshire New University,
+              where I teach and research how new treatments and technologies reach patients.
             </p>
             
             <div className="space-y-4">
@@ -51,7 +52,7 @@ export default function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-lg text-gray-700">Skin Cancer Lead for hospital</span>
+                <span className="text-lg text-gray-700">Consultant Plastic Surgeon, Buckinghamshire Healthcare NHS Trust</span>
               </div>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-medical-blue rounded-full flex items-center justify-center mr-4">
@@ -59,7 +60,7 @@ export default function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-lg text-gray-700">Operating within Buckinghamshire Healthcare NHS Trust</span>
+                <span className="text-lg text-gray-700">Visiting Professor, Buckinghamshire New University</span>
               </div>
             </div>
           </div>
