@@ -52,20 +52,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Get contact inquiries (for admin purposes)
-  app.get("/api/contact-inquiries", async (req, res) => {
-    try {
-      const inquiries = await storage.getContactInquiries();
-      res.json(inquiries);
-    } catch (error) {
-      console.error("Error fetching inquiries:", error);
-      res.status(500).json({
-        success: false,
-        message: "Error fetching contact inquiries"
-      });
-    }
-  });
-
   const httpServer = createServer(app);
   return httpServer;
 }
