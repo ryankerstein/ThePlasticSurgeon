@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400">
             <div className="text-center md:text-left">
-              <p>&copy; 2025 Mr Ryan Kerstein. Operating within Buckinghamshire Healthcare NHS Trust.</p>
+              <p>&copy; 2025 Professor Ryan Kerstein. Operating within Buckinghamshire Healthcare NHS Trust.</p>
               <p className="mt-1 text-sm">
                 TheSurgeon.io Ltd (UK Company No. 13552195)
               </p>

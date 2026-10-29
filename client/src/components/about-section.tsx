@@ -8,7 +8,7 @@ export default function AboutSection() {
           <div>
             <img 
               src={surgicalImage} 
-              alt="Mr Ryan Kerstein performing surgery with precision surgical loupes and equipment" 
+              alt="Professor Ryan Kerstein performing surgery with precision surgical loupes and equipment" 
               className="rounded-xl shadow-lg w-full h-auto max-w-lg mx-auto"
             />
           </div>

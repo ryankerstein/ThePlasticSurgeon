@@ -21,7 +21,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              <span className="text-medical-blue">Mr Ryan Kerstein</span>
+              <span className="text-medical-blue">Professor Ryan Kerstein</span>
               <br />
               Plastic Surgeon & 
               <span className="text-medical-blue"> Skin Cancer Specialist</span>
@@ -73,7 +73,7 @@ export default function HeroSection() {
           <div className="order-1 lg:order-2">
             <img 
               src={headshotImage} 
-              alt="Mr Ryan Kerstein - Plastic Surgery Specialist" 
+              alt="Professor Ryan Kerstein - Plastic Surgery Specialist" 
               className="rounded-xl shadow-2xl w-full h-auto max-w-md mx-auto"
             />
           </div>
