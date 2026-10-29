@@ -149,3 +149,10 @@ This inquiry was submitted through the Plastic Surgery Specialist website.
     message: "Thank you for your inquiry. Gemma Fowler will contact you shortly.",
   });
 }
+
+// GET /api/contact: reports only whether email sending is configured,
+// so the set-up can be checked without sending a real enquiry.
+export async function onRequestGet(context: Context): Promise<Response> {
+  const { env } = context;
+  return json({ emailConfigured: Boolean(env.MAILJET_API_KEY && env.MAILJET_API_SECRET) });
+}
